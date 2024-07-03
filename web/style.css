@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+:root{
+    --shadow: 4px 4px 12px 2px rgb(0,0,0,0.08), 
+    -4px -4px 12px rgb(255,255,255,1);
+}
+
+body{
+    overscroll-behavior: none;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+}
+
+.sketchPad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input#student{
+    padding: 12px 8px;
+}
+
+.btn{
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    color: #ececec;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    border: 2px solid #ececec;
+}
+
+.btn:hover{
+    background-color: #ececec;
+    color: #000;
+}
+
+.btn.undo:disabled{
+    opacity: 0.5;
+    cursor: no-drop;
+}
